@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  background: linear-gradient(rgba(4, 3, 3, 0.4), rgba(4, 3, 3, 0.7)),
+    url("../images/valorant-wallpaper.jpg");
+  background-position: 50% 30%;
+  font-size: 20px;
+  padding: 60px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #461111;
+}
+
+h4 {
+  color: #b3541e;
+}
+
+nav {
+  background-color: #040303;
+  /* opacity: 0.8; */
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+  text-align: center;
+}
+
+nav li a {
+  color: white;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #040303;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+main {
+  display: flex;
+}
+
+.content article {
+  padding: 40px 60px;
+  margin: 30px 15px;
+}
+
+.content article h2 {
+  text-align: center;
+}
+
+#dropdown-navigation {
+  display: none;
+}
+
+#acara section {
+  margin-top: 30px;
+}
+
+#acara .tournament-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tournament-item {
+  width: 45%;
+  margin: 20px 20px 0 0;
+  padding: 20px;
+}
+
+.tournament-item-image {
+  display: flex;
+  justify-content: center;
+}
+
+#klasemen table {
+  margin: 30px auto;
+  width: 75%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #333;
+}
+
+#klasemen th,
+#klasemen td {
+  text-align: center;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+#klasemen td.rank-number {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+#klasemen th,
+#klasemen tr {
+  color: white;
+}
+
+#klasemen th {
+  background-color: #040303;
+}
+
+#klasemen tr:nth-child(even) {
+  background-color: #a13333;
+}
+
+#klasemen tr:nth-child(odd) {
+  background-color: #461111;
+}
+
+aside article {
+  padding: 30px 60px;
+  margin: 30px 15px;
+}
+
+aside article header,
+aside article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside article section table tr th {
+  text-align: right;
+}
+
+.foto-profil {
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  #dropdown-navigation {
+    display: block;
+  }
+
+  #dropdown-navigation a:after {
+    content: "\2630";
+    margin-left: 5px;
+  }
+
+  .nav-menu-item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  main {
+    flex-wrap: wrap;
+  }
+  aside {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .tournament-item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #klasemen table {
+    width: 100%;
+  }
+}
